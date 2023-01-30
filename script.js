@@ -12,6 +12,14 @@ $(document).keypress(function(){
     }
 })
 
+$(document).click(function(){
+    if(!started){
+        $("#level-title").text("level "+level);
+        newsequence();
+        started=true;
+    }
+})
+
 function newsequence(){
     userClickedColor=[];
     level++;
